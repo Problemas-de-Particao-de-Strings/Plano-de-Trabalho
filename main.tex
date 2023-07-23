@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, 11pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -9,11 +9,17 @@
 
 \usepackage{geometry}
 \geometry{
-    margin = 1.5cm,
+    left = 1.5cm,
+    right = 1.5cm,
+    top = 1cm,
+    bottom = 1.5cm,
     noheadfoot = true
 }
 
 \usepackage{enumitem}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{hyperref}
 
 %%%%%%%%%%%%%%%
 %% Documento %%
@@ -26,19 +32,57 @@
     \maketitle
 
     \section{Objetivos}
-        \ldots
+        No estudo de rearranjo de genomas, considerando o contexto de representação de genomas por strings, um conjunto de problemas de interesse é o de Problemas de Partição de Strings. Tais problemas consistem em receber duas strings e encontrar formas de segmentar uma delas e rearranjar as partes criadas para formar a outra. Os problemas são diferenciados pelas restrições feitas à forma com que se pode segmentar ou rearranjar as partes. Além da reordenação, o problema pode ser considerado com as operações de inversão ou até a remoção de partes.
+
+        Durante o decorrer do projeto, pretende-se estudar e desenvolver heurísticas para os Problemas de Partição de Strings e aplicá-las a uma base de dados a fim de comparar os desempenhos. Na sequência, serão desenvolvidas meta-heurísticas, que também terão desempenho mensurado e comparado.
+
+    \section{Procedimento}
+
+        O andamento do projeto será baseado no cronograma abaixo, com possíveis alterações do tempo dedicado a algumas atividades. A princípio, os dois estudantes participarão de todas as etapas do projeto e serão orientados em reuniões semanais.
 
     \section{Cronograma}
 
-        \begin{enumerate}
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+                \hline
+                 & \multicolumn{2}{c|}{Julho} & \multicolumn{2}{c|}{Agosto} & \multicolumn{2}{c|}{Setembro} & \multicolumn{2}{c|}{Outubro} & \multicolumn{2}{c|}{Novembro} \\
+                \hline
+                 & 01-15 & 16-31 & 01-15 & 16-31 & 01-15 & 16-30 & 01-15 & 16-31 & 01-15 & 16-30 \\
+                \hline
+                1 & &*&*&*& & & & & & \\
+                \hline
+                2 & & &*&*&*& & & & & \\
+                \hline
+                3 & & &*&*&*& & & & & \\
+                \hline
+                4 & & & & &*&*&*& & & \\
+                \hline
+                5 & & & & & &*&*&*&*& \\
+                \hline
+                6 & & & &*&*& &*& &*& \\
+                \hline
+                7 & & & & &*& &*& &*& \\
+                \hline
+                8 & & & & &*& &*& &*& \\
+                \hline
+                9 & & & & & &*& &*& &*\\
+                \hline
+            \end{tabular}
+            \caption{Cronograma previsto para o desenvolvimento do projeto.}
+            \label{tab:cronograma}
+        \end{table}
+
+        \begin{enumerate}[itemsep=0pt]
             \item Revisão da literatura.
             \item Criação da base de dados.
-            \item Implementação de heurísticas ??
-            \item ?? meta-heurísticas / algoritmos exatos
-            \item ??
+            \item Desenvolvimento de heurísticas.
+            \item Viabilidade das operações de reversão, inserção e deleção.
+            \item Desenvolvimento de meta-heurísticas.
             \item Execução dos experimentos.
             \item Comparação dos resultados.
             \item Escrita do relatório.
             \item Revisão do relatório.
         \end{enumerate}
+
 \end{document}
